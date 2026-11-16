@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog Menu | Ndip Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-isi">
+      <a class="logo" href="index.html">Ndip Cafe</a>
+      <button class="tombol-menu" id="tombolMenu" type="button" aria-expanded="false" aria-controls="menuUtama" hidden>Menu</button>
+      <nav aria-label="Navigasi utama">
+        <ul class="menu" id="menuUtama">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html" aria-current="page">Katalog</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="bagian">
+      <h1>Katalog menu</h1>
+      <div class="filter" id="filter" hidden>
+        <div>
+          <label for="cari">Cari nama menu</label>
+          <input type="search" id="cari" placeholder="Contoh: kopi">
+        </div>
+        <div>
+          <label for="kategori">Kategori</label>
+          <select id="kategori">
+            <option value="semua">Semua</option>
+            <option value="makanan">Makanan</option>
+            <option value="minuman">Minuman</option>
+          </select>
+        </div>
+        <div>
+          <label for="urut">Urutkan</label>
+          <select id="urut">
+            <option value="asli">Bawaan</option>
+            <option value="murah">Harga termurah</option>
+            <option value="mahal">Harga termahal</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-katalog" id="daftarMenu">
+        <article class="kartu">
+          <img src="kopsu_ndip.jpeg" alt="Segelas kopi susu gula aren dengan es" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Kopi Susu Ndip</h3>
+            <p>Espresso, susu segar, dan gula aren dalam satu gelas.</p>
+            <p class="harga">Rp18.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="americano_ndip.jpeg" alt="Secangkir americano panas" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Americano</h3>
+            <p>Espresso double dengan air panas, tanpa gula.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="roti_bakar_ndip.jpeg" alt="Roti bakar dengan topping coklat dan keju" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Roti Bakar Coklat Keju</h3>
+            <p>Roti tebal dibakar dengan coklat dan keju.</p>
+            <p class="harga">Rp14.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="nasi_goreng_ndip.jpeg" alt="Sepiring nasi goreng dengan telur mata sapi" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Nasi Goreng Ndip</h3>
+            <p>Nasi goreng kampung dengan telur dan kerupuk.</p>
+            <p class="harga">Rp25.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="teh_ndip.jpeg" alt="Segelas es teh manis" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Es Teh Manis</h3>
+            <p>Teh seduh segar dengan gula secukupnya.</p>
+            <p class="harga">Rp4.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="kentang_goreng_ndip.jpeg" alt="Semangkuk kentang goreng" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Kentang Goreng</h3>
+            <p>Kentang goreng renyah dengan saus sambal.</p>
+            <p class="harga">Rp12.000</p>
+          </div>
+        </article>
+      </div>
+      <p id="kosong" hidden>Menu tidak ditemukan. Coba kata kunci lain.</p>
+    </section>
+
+    <section class="bagian">
+      <h2>Daftar harga ringkas</h2>
+      <div class="tabel-bungkus">
+        <table>
+          <caption>Harga menu Ndip Cafe</caption>
+          <thead>
+            <tr><th scope="col">Menu</th><th scope="col">Kategori</th><th scope="col">Harga</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kopi Susu Ndip</td><td>Minuman</td><td>Rp18.000</td></tr>
+            <tr><td>Americano</td><td>Minuman</td><td>Rp15.000</td></tr>
+            <tr><td>Roti Bakar Coklat Keju</td><td>Makanan</td><td>Rp14.000</td></tr>
+            <tr><td>Nasi Goreng Ndip</td><td>Makanan</td><td>Rp25.000</td></tr>
+            <tr><td>Es Teh Manis</td><td>Minuman</td><td>Rp4.000</td></tr>
+            <tr><td>Kentang Goreng</td><td>Makanan</td><td>Rp12.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Ndip Cafe. Jl. Melati No. 12, Kelurahan keramat.</p>
+    <p>Buka setiap hari 10.00&ndash;23.00 WIB.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda | Ndip Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-isi">
+      <a class="logo" href="index.html">Ndip Cafe</a>
+      <button class="tombol-menu" id="tombolMenu" type="button" aria-expanded="false" aria-controls="menuUtama" hidden>Menu</button>
+      <nav aria-label="Navigasi utama">
+        <ul class="menu" id="menuUtama">
+          <li><a href="index.html" aria-current="page">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-isi">
+        <h1>Tempat ngopi santai untuk ngobrol, belajar, dan bekerja</h1>
+        <p class="tagline">Sejak 2020 kami menyeduh kopi dari biji pilihan untuk mahasiswa dan warga sekitar.</p>
+        <a class="tombol" href="katalog.html">Lihat menu</a>
+      </div>
+      <img src="img/ndip_cafe.jpeg" alt="Ilustrasi kopi dan hidangan Ndip Cafe" width="640" height="420">
+    </section>
+
+    <section class="bagian">
+      <h2>Tentang singkat</h2>
+      <p>Ndip Cafe buka dari siang sampai malam dengan wifi dan colokan di setiap meja. Biji kopi disangrai segar dan makanan ringan dibuat setiap hari. Area dalam ruangan bisa dipesan untuk acara kecil atau kerja kelompok.</p>
+    </section>
+
+    <section class="bagian">
+      <h2>Menu unggulan</h2>
+      <div class="grid-katalog">
+        <article class="kartu">
+          <img src="img/kopsu_ndip.jpeg" alt="Segelas kopi susu gula aren dengan es" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Kopi Susu Ndip</h3>
+            <p>Espresso, susu segar, dan gula aren dalam satu gelas.</p>
+            <p class="harga">Rp18.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="img/americano_ndip.jpeg" alt="Secangkir americano panas" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Americano</h3>
+            <p>Espresso double dengan air panas, tanpa gula.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+        <article class="kartu">
+          <img src="img/nasi goreng_ndip.jpeg" alt="Sepiring nasi goreng dengan telur mata sapi" width="640" height="420">
+          <div class="kartu-isi">
+            <h3>Nasi Goreng Ndip</h3>
+            <p>Nasi goreng kampung dengan telur dan kerupuk.</p>
+            <p class="harga">Rp25.000</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Ndip Cafe. Jl. Melati No. 12, Kelurahan keramat.</p>
+    <p>Buka setiap hari 10.00&ndash;23.00 WIB.</p>
+  </footer>
+</body>
+</html>
